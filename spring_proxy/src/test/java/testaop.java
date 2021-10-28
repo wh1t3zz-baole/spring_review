@@ -12,10 +12,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @description spring_review testaop
  * @date 2021/10/27 9:54 下午
  */
-@EnableAutoConfiguration
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
-@MapperScan("com.aop")
 public class testaop {
 
     @Autowired
