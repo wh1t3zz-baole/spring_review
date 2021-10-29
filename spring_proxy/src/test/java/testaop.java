@@ -1,4 +1,4 @@
-import com.aop.impl.AdminServiceImpl;
+import com.aop.AdminService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,12 +11,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * @date 2021/10/27 9:54 下午
  */
 
-@RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:applicationContext.xml")
+@RunWith(SpringJUnit4ClassRunner.class)
 public class testaop {
 
     @Autowired
-    private AdminServiceImpl adminServiceImpl;
+    private AdminService adminServiceImpl;
 
     @Test
     public void test01(){
